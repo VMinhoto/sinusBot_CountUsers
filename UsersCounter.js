@@ -6,7 +6,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 /*
-    This 1st block of code defines the guy in sinusbot webpage
+    This 1st block of code defines the gui in sinusbot webpage
 */
 registerPlugin({
     name: 'OnlineUsersCounter',
