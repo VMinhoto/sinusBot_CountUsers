@@ -74,7 +74,7 @@ registerPlugin({
             type: 'string'
         }
     ]
-, function (sinusbot, config) {
+}, function (sinusbot, config) {
      var engine = require('engine');
      var backend = require('backend');
      var event = require('event');
@@ -167,5 +167,4 @@ registerPlugin({
          return boolHasGroup;
      }
     
-}}
-)
+})
