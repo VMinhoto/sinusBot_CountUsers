@@ -91,21 +91,25 @@ registerPlugin({
 
      function onlineRefresh(){
          if (playersOnline != backend.getClients()){
+            playersOnlineVar = backend.getClients()
              var channel = backend.getChannelByID(config.channelUsersOnline)
              channel.setName(config.channelUsersOnlineString.replace(/%x/g, playersOnline))
          }
 
          if (adminsOnlineVar != adminsOnline()){
+            adminsOnlineVar = adminsOnline()
             var channel = backend.getChannelByID(config.channelAdminsOnline)
             channel.setName(config.channelAdminsOnlineString.replace(/%x/g, adminsOnlineVar))
         }
 
         if (modsOnline != modsOnline()){
+            modsOnlineVar = modsOnline()
             var channel = backend.getChannelByID(config.channelModsOnline)
             channel.setName(config.channelModsOnlineString.replace(/%x/g, modsOnlineVar))
         }
 
         if (prosOnline != prosOnline()){
+            prosOnlineVar = prosOnline()
             var channel = backend.getChannelByID(config.channelProsOnline)
             channel.setName(config.channelProsOnlineString.replace(/%x/g, prosOnlineVar))
         }
