@@ -93,7 +93,7 @@ registerPlugin({
          if (playersOnline != backend.getClients()){
             playersOnlineVar = backend.getClients()
              var channel = backend.getChannelByID(config.channelUsersOnline)
-             channel.setName(config.channelUsersOnlineString.replace(/%x/g, playersOnline))
+             channel.setName(config.channelUsersOnlineString.replace(/%x/g, playersOnlineVar))
          }
 
          if (adminsOnlineVar != adminsOnline()){
